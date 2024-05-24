@@ -1,0 +1,82 @@
+/* Reset some default styles for the page */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0; /* Add this to reset body margin */
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#menu, #order {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#menu {
+    max-width: 60%;
+    overflow-y: auto;
+}
+
+#order {
+    max-width: 35%;
+    position: relative; /* Add this for position reference */
+    padding-bottom: 4em;
+}
+
+#menu h3, #order h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#menu ul, #order ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li, #order li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add this for the animation */
+}
+
+#order-total {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* Add this to fix the footer at the bottom */
+    bottom: 0; /* Add this to position it at the bottom */
+    width: 100%; /* Add this to span the full width */
+}
