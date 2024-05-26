@@ -76,3 +76,28 @@ class Store {
 
    // Unsubscribe - Calls the unsubscribe function to remove the listener, so it will no longer log state updates to the console
    unsubscribe();
+
+
+// Overview of the Approach
+// The code defines a simple state management system using the principles of Redux. Here is a step-by-step explanation of the approach:
+
+// 1. Store Class:
+//  - Manages the application's state.
+//  - Provides methods `getState()`, `dispatch(action)`, and `subscribe(listener)`.
+
+// 2. tallyReducer Function:
+//  - A pure function that determines how the state changes in response to different actions (`ADD`, `SUBTRACT`, `RESET`).
+
+// 3. Creating the Store:
+//   - An instance of the `Store` class is created with the `reduceTally` and an initial state of `0`.
+
+// 4. Subscribing to State Changes:
+//   - A listener is subscribed to log state updates to the console.
+
+// 5. Dispatching Actions:
+//  - Different actions are dispatched to the store, triggering state changes and logging the new state to the console.
+
+// 6. Unsubscribing:
+//   - The listener is unsubscribed to stop receiving state updates.
+
+// This approach allows for managing the state of an application in a predictable way, ensuring that the state transitions are handled through a centralized mechanism (the reducer) and that components (listeners) are updated accordingly.
