@@ -31,7 +31,7 @@ class Store {
 
 
   // tallyReducer function is a pure function that defines how the state changes in response to different actions
-  const tallyReducer = (state = 0, action) => {
+  const reduceTally = (state = 0, action) => {
     switch (action.type) {
       case "ADD":
         return state + 1;
@@ -45,8 +45,8 @@ class Store {
           };
 
    // Create the Store 
-   // Creates a new Store instance with the tallyReducer as the reducer and 0 as the initial state
-   const store = new Store(tallyReducer, 0);
+   // Creates a new Store instance with the reduceTally as the reducer and 0 as the initial state
+   const store = new Store(reduceTally, 0);
 
    // Subscribe to Changes - // You can subscribe to state changes with a listener function and unsubscribe from state changes to stop receiving updates
 
